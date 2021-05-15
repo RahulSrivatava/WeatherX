@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    font-family: cursive;
+   /* background: linear-gradient( rgb(209, 209, 209) rgb(131, 29, 29)); */
+
+    background-image: url("img/bg1.jpg");
+    background-size: cover;
+    background-position: top center;
+}
+.head{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding:20px;
+     font-size:50px;
+     color: rgb(53, 9, 6);
+}
+.aap-main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    /* margin: 50; */
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px,15px,15px;
+}
+ header input{ 
+   background-color: rgba(133, 127, 127, 0.3);
+   outline: none;
+   padding:5px 10px;
+   border-radius:15px     ;
+   font-size: 15px;
+   font-weight: 800;
+   transition: 0.9s ease-in-out;
+   color:#ffff;
+
+} 
+header input :focus{
+    background-color: rgba(255, 255, 255,0.5);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.city{
+     color: rgb(58, 17, 17);
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.date{
+    color: rgb(80, 22, 22);
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-top: 10px; */
+    margin-bottom: 5px;
+}
+.temp{
+  color: rgb(58, 16, 16);
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 2px 5px rgba(0,0,0,0.4);
+    margin-top: 10px;
+    margin-bottom: 5px;
+} 
+.weather{
+  color: rgb(78, 23, 23);
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+   text-shadow: 0px 3px rgba(0,0,0,0.4);
+    margin-top: 5px;
+    margin-bottom: 5px;
+} 
+.hi-low{
+   color: rgb(56, 17, 17);
+    font-size: 45px;
+    font-weight: 700;
+     text-shadow: 2px 2px rgba(0,0,0,0.4);
+} 
+.social-links{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-left: 0%;
+    width: 100%;
+}
+.social-links img{
+
+    /* border-radius: 10%; */
+    cursor: pointer;
+    height: 25px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:400px){
+   .head{
+       font-size: 30px;
+       /* font-weight: 100; */
+   }
+    
+   .city{
+    font-size: 40px;
+    font-weight: 600;
+
+   }
+   .date{
+    font-size: 15px;
+    font-weight: 600;
+   }
+   .temp{
+    font-size: 65px;
+    font-weight: 300;
+   }
+   .weather{
+    font-size: 40px;
+    font-weight: 600;
+   }
+   .hi-low{
+    font-size: 40px;
+    font-weight: 400;
+   }
+}
